@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Haafizh Portofolio</title>
+    <link rel="stylesheet" href="Portsytle.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+
+</head>
+<body>
+    <div class="hero-header">
+        <div class="wrapper">
+            <header>
+                <div class="logo">
+                    <i class="fa-solid fa-h"></i>
+                    <div class="logo-text">Haafizh</div>
+                </div>
+                <nav>
+                    <div class="togglebtn">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                    <ul class="navlinks">
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">Portofolio</a></li>
+                        <li><a href="#">Resume</a></li>
+                        <li><a href="#">Blog</a></li>
+                        <li><a href="#">Contact</a></li>
+                    </ul>
+                </nav>
+            </header>
+            <div class="container">
+                <div class="hero-pic">
+                    <img src="Gua.jpg" alt="profile pic">
+                </div>
+                <div class="hero-text">
+                    <h5>Hi I'm <span class="input">Student Of SMK PRESTASI PRIMA</span></h5>
+                    <h1>Haafizh</h1>
+                    <p>"Keep it up and go on You're only holding out for what you want
+                        You no longer owe the strangers
+                        It's enough, it's enough"
+                    </p>
+                    <div class="social">
+                        <a href="https://www.facebook.com/muh.sulfikar.79/posts/pfbid0cS1VYP8puL2QLbhjfzWgFDD5UxjDYgp2MMonmoWrPz6NbvjgZfJeUFkrv2SiKKoNl?locale=id_ID" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="https://www.instagram.com/hvizze/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="https://x.com/aesthetxcs_Pics/status/1700543396685713497?s=20" target="_blank"><i class="fa-brands fa-twitter"></i></a>
+                        <a href="https://open.spotify.com/user/31bdgkzqzgyofwhq2r7fl4rrlpcu?si=82b3ff245c5848c6" target="_blank"><i class="fa-brands fa-spotify"></i></a>
+                        <a href="https://github.com/Hv1zze" target="_blank"><i class="fa-brands fa-github"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.10/typed.min.js"></script>
+    <script>
+        var togglebtn=document.querySelector(".togglebtn");
+        var nav=document.querySelector(".navlinks");
+        var links=document.querySelector(".navlinks li");
+
+        togglebtn.addEventListener("click", function(){
+            this.classList.toggle("click");
+            nav.classList.toggle("open");
+        })
+
+        var typed=new Typed(".input",{
+            strings:["Student Of SMK PRESTASI PRIMA","Feel","Like","God"],
+            typedSpeed:70,
+            backSpeed:55,
+            loop:true
+        })
+    </script>
+</body>
+</html>
